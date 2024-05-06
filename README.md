@@ -1,2 +1,3 @@
 # Job_recommender
-z;dfknvod'fve
+pip install requirements.txt
+
