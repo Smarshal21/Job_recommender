@@ -37,7 +37,7 @@ def initialize_chunks_embeddings():
 initialize_chunks_embeddings()
 
 #  ****API_KEY****  #
-api_key = "YOUR_GEN_AI_API_KEY"
+api_key = "AIzaSyAuoggTUpQqaXsnGgp8Rd-U6NbXAyM3AIk"
 # Configure GenerativeAI
 genai.configure(api_key=api_key)
 genmodel = genai.GenerativeModel('gemini-pro')
