@@ -57,6 +57,9 @@ def getJobDetails():
     response = answer(text)
     return response
 
+@app.route('/hello', methods=['GET'])
+return "HELLO"
+
 if __name__ == '__main__':
     try:
         app.run(host='0.0.0.0', port=8080, debug=True)
