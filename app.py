@@ -58,7 +58,9 @@ def getJobDetails():
     return response
 
 @app.route('/hello', methods=['GET'])
-return "HELLO"
+def hello():
+    return "HELLO"
+
 
 if __name__ == '__main__':
     try:
