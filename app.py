@@ -11,7 +11,7 @@ model_name = "sentence-transformers/all-MiniLM-L6-v2"
 model = SentenceTransformer(model_name)
 
 # Load data and model
-with open("pickle_file", 'rb') as f:
+with open("pickle_file.pkl", 'rb') as f:
     loaded_data = pickle.load(f)
 
 chunks_embeddings = []
@@ -27,7 +27,7 @@ def initialize_chunks_embeddings():
 initialize_chunks_embeddings()
 
 # API Key for GenerativeAI
-api_key = "YOUR_API_KEY"
+api_key = "AIzaSyAmDvIGTouyR6duM1mMLL_ni5QfiuK6pjY"
 genai.configure(api_key=api_key)
 genmodel = genai.GenerativeModel('gemini-pro')
 
